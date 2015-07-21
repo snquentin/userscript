@@ -7,7 +7,8 @@
 // @include        http://www.tudou.com/playlist/*.htm*
 // @include        http://www.tudou.com/albumplay/*.htm*
 // @include        http://www.tudou.com/programs/view/*
-// @version 0.0.1.20150718125100
+// @include        http://tv.sohu.com/*
+// @version 0.0.1.20150721233100
 // ==/UserScript==
 
 function create_flvcd_url(format) {
@@ -38,6 +39,16 @@ var sites = [
             new_link_node.title = title;
             new_link_node.target = '_blank';
             source_link_node.parentNode.replaceChild(new_link_node, source_link_node);
+        }
+    },
+    {
+        domain: 'sohu.com',
+        handler: function() {
+            var source_link_node = document.getElementById('playtoolbar');
+            var new_link_node = document.createElement('div');
+            source_link_node.appendChild(new_link_node);
+            new_link_node.innerHTML = '<a target="_blank" href="' + create_flvcd_url('real') + '" class="vbtn"><em>用 Flvcd 下载视频</em></a>';
+            new_link_node.className = 'vBox vBox-xia';
         }
     }
 ];
