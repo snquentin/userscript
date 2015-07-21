@@ -12,7 +12,7 @@ GM 脚本
 脚本一览（修改版）
 ---------------
 
-- [Flvcd Download Links 修改版](https://github.com/snquentin/userscript/raw/master/Flvcd-Download-Links-for-snquentin.user.js)：替换在线视频的下载链接为 flvcd.com 的解析链接。
+- [Flvcd Download Links 修改版](Flvcd-Download-Links-for-snquentin.user.js)：替换在线视频的下载链接为 flvcd.com 的解析链接。
   - 重新适配优酷及土豆(20150720)
   - 添加搜狐视频的支持(20150721)
 
