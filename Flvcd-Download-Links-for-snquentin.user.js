@@ -1,7 +1,18 @@
 // ==UserScript==
-// @name           Flvcd Download Links 星月改进版
+// @name           Flvcd Download Links for Jacob
+// @name:en        Flvcd Download Links for Jacob
+// @name:zh-CN     Flvcd Download Links 星月改进版
+// @name:zh-TW     Flvcd Download Links 星月改進版
+
+// @description       Download online video By flvcd.com
+// @description:zh-CN 替换在线视频的下载链接为 flvcd.com 的解析链接
+// @description:zh-TW 替換線上視頻的下載連結為 flvcd.com 的解析連結
+// @description:en    Download online video By flvcd.com
+
+// @author         Jacob Yang<snquentin>
 // @namespace      http://firelove.sinaapp.com
-// @description    替换在线视频的下载链接为 flvcd.com 的解析链接
+// @version        0.0.1.20150803234200
+
 // @include        http://v.youku.com/v_show/*.htm*
 // @include        http://v.youku.com/v_playlist/*.htm*
 // @include        http://www.tudou.com/playlist/*.htm*
@@ -9,7 +20,6 @@
 // @include        http://www.tudou.com/programs/view/*
 // @include        http://tv.sohu.com/*.shtml
 // @include        http://my.tv.sohu.com/*.shtml
-// @version 0.0.1.20150803234200
 // ==/UserScript==
 
 function create_flvcd_url(format) {
