@@ -1,8 +1,10 @@
 GM 脚本
 ========
 
+- [个人主页 - sinaapp][snquentin_sinaapp]
 - [个人主页 - github][snquentin_github]
 - [个人主页 - greasyfork.org][snquentin_greasyfork]
+- [霸戈足球队 - sinaapp][bugclub_sinaapp]
 
 注：本人原创或修改的 GM 脚本。
 
@@ -18,5 +20,7 @@ GM 脚本
   - 修正搜狐视频的支持(20150803)
 
 
+[snquentin_sinaapp]:http://firelove.sinaapp.com
+[bugclub_sinaapp]:http://bugclub.sinaapp.com
 [snquentin_github]: https://github.com/snquentin/userscript
 [snquentin_greasyfork]: https://greasyfork.org/zh-CN/users/12659-jacob-yang
