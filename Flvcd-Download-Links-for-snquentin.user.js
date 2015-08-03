@@ -20,7 +20,7 @@ var title = '用 Flvcd 下载视频';
 var sites = [
     {
         domain: 'youku.com',
-        handler:window.onload = function() {
+        handler:function() {
 			var fn_download_node = document.getElementById('fn_download');
 			var source_link_node = fn_download_node.getElementsByTagName('a')[0];
             var new_link_node = source_link_node.cloneNode('include_all');
@@ -32,7 +32,7 @@ var sites = [
     },
     {
         domain: 'tudou.com',
-        handler:window.onload = function() {
+        handler: function() {
             var fn_download_node = document.getElementById('downloadBtn');
 			var source_link_node = fn_download_node.getElementsByTagName('a')[0];
             var new_link_node = source_link_node.cloneNode('include_all');
@@ -44,7 +44,7 @@ var sites = [
     },
     {
         domain: 'sohu.com',
-        handler:window.onload = function() {
+        handler:function() {
             var source_link_node = document.getElementById('playtoolbar');
             var new_link_node = document.createElement('div');
             source_link_node.appendChild(new_link_node);
@@ -54,12 +54,15 @@ var sites = [
     }
 ];
 
-var url = document.URL;
-var i, site;
-for (i = 0; i < sites.length; i += 1) {
-    site = sites[i];
-    if (url.indexOf(site.domain) != -1) {
-        site.handler();
-        break;
-    }
+function fdl() {
+	var url = document.URL;
+	var i, site;
+	for (i = 0; i < sites.length; i += 1) {
+	    site = sites[i];
+	    if (url.indexOf(site.domain) != -1) {
+	        site.handler();
+	        break;
+	    }
+	}
 }
+window.onload = fdl;
