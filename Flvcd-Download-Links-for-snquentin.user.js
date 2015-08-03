@@ -64,7 +64,7 @@ var sites = [
     }
 ];
 
-function fdl() {
+function jacobfdl() {
 	var url = document.URL;
 	var i, site;
 	for (i = 0; i < sites.length; i += 1) {
@@ -75,4 +75,4 @@ function fdl() {
 	    }
 	}
 }
-window.onload = fdl;
+window.onload = jacobfdl;
